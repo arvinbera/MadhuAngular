@@ -1,0 +1,11 @@
+<p>user-login works!</p>
+<form (ngSubmit)="Login()">
+    
+    <div>Phone</div>
+    <div><input type="number" name="Phone" [(ngModel)]="Model.Phone"/></div>
+    
+    <div>Password</div>
+    <div><input type="password" name="Password" [(ngModel)]="Model.Password"/></div>
+
+    <button>Login</button>
+</form>

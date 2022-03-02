@@ -1,0 +1,27 @@
+<h1>Edit Form</h1>
+<form (ngSubmit)="Update()">
+        <div>Name</div>
+        <div><input type="text" name="Name" [(ngModel)]="Model.Name" value="Mode.Name"/></div>
+        
+        <div>Email</div>
+        <div><input type="text" name="Email" [(ngModel)]="Model.Email"/></div>
+        
+        
+        
+        <div>Country</div>
+        <div><input type="text" name="Country" [(ngModel)]="Model.Country"/></div>
+        
+        <div>State</div>
+        <div><input type="text" name="State" [(ngModel)]="Model.State"/></div>
+        
+        <div>Phone</div>
+        <div><input type="number" name="Phone" [(ngModel)]="Model.Phone"/></div>
+        
+        <div>City</div>
+        <div><input type="text" name="City" [(ngModel)]="Model.City"/></div>
+        <button>Register</button>
+        
+
+        {{Model.Name}}
+
+    </form>

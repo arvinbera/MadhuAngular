@@ -1,0 +1,93 @@
+<!-- <h1>Registration Form</h1>
+<form (ngSubmit)="Create()">
+        <div>Name</div>
+        <div><input type="text" name="Name" [(ngModel)]="Model.Name" /></div>
+        
+        <div>Email</div>
+        <div><input type="text" name="Email" [(ngModel)]="Model.Email"/></div>
+        
+        <div>Password</div>
+        <div><input type="password" name="Password" [(ngModel)]="Model.Password"/></div>
+        
+        <div>Country</div>
+        <div><input type="text" name="Country" [(ngModel)]="Model.Country"/></div>
+        
+        <div>State</div>
+        <div><input type="text" name="State" [(ngModel)]="Model.State"/></div>
+        
+        <div>Phone</div>
+        <div><input type="number" name="Phone" [(ngModel)]="Model.Phone"/></div>
+        
+        <div>City</div>
+        <div><input type="text" name="City" [(ngModel)]="Model.City"/></div>
+
+        <div>Upload Image</div>
+        <div><input type="file" name="file" (change)="SetFile($event)"/></div>
+        
+        <button>Register</button>
+        
+
+
+    </form> -->
+
+
+    <form class="example-form" (ngSubmit)="Create()">
+      <div>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Name"  name="Name" [(ngModel)]="Model.Name">
+          </mat-form-field>
+        
+      </div>
+      <div>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Email"  name="Email" [(ngModel)]="Model.Email">
+          </mat-form-field>
+        
+      </div>
+      <div>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Password</mat-label>
+            <input matInput placeholder="Password"  name="Password" [(ngModel)]="Model.Password">
+          </mat-form-field>
+        
+      </div>
+      <div>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Country</mat-label>
+            <input matInput placeholder="Country"  name="Country" [(ngModel)]="Model.Country">
+          </mat-form-field>
+        
+      </div>
+      <div>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>State</mat-label>
+            <input matInput placeholder="State"  name="State" [(ngModel)]="Model.State">
+          </mat-form-field>
+        
+      </div>
+      <div>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Phone</mat-label>
+            <input matInput placeholder="Phone"  name="Phone" [(ngModel)]="Model.Phone">
+          </mat-form-field>
+        
+      </div>
+      <div>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>City</mat-label>
+            <input matInput placeholder="City"  name="City" [(ngModel)]="Model.City">
+          </mat-form-field>
+        
+      </div>
+      <div>
+        
+            <input type="file" name="file" (change)="SetFile($event)"/>
+
+        
+      </div>
+      <button mat-raised-button color="primary">Submt</button>
+       
+     </form>
+      

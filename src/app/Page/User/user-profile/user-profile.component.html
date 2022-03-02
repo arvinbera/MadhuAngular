@@ -1,0 +1,16 @@
+<p>user-profile works!</p>
+
+{{Model.Name}}
+<img src="{{Model.File}}" height="100" width="100"/>
+<button (click)="LogOut()">log out</button>
+<a routerLink="/user/edit">Edit</a>
+
+
+ <input type="file" name="file" (change)="SetFile($event)"/>
+
+
+
+ <h3>Image Upload</h3>
+
+
+ <input type="file"  (change)="SetMultiFile($event)" accept="image/*" multiple/>
